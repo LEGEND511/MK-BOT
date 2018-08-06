@@ -804,6 +804,7 @@ channel.guild.owner.send(`<@!${channelremover.id}>
  channelr[channelremover.id].deleted = 0;
   },Otime)
   });
+
 let al = JSON.parse(fs.readFileSync(`./antilinks.json`, `utf8`));
 
 

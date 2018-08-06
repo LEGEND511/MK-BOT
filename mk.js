@@ -24,7 +24,7 @@ client.on('ready', () => {
   console.log('----------------------------------------------')
 });
 client.on('message', message => {
-if (message.content === prefix + 'help') {
+if (message.content === prefix + 'admin') {
 if (!message.member.hasPermission("ADMINISTRATOR")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
         let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)

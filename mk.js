@@ -36,6 +36,7 @@ client.on('guildMemberRemove', member => {
     client.channels.get('476118785011613696').setName(`⟫『 ${memberCount} عدد الاعضاء 』⟪`);
     client.channels.get('476118847720652820').setName(`⟫『 ${botCount} عدد البوتات 』⟪`);
 });
+
 client.on("ready", function() {
 	console.log("ready");
 	

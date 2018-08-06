@@ -909,8 +909,8 @@ if(message.content.startsWith(prefix + 'الشعار')) {
 message.channel.send(":arrow_down:شعار دسكورد جنب اسمك الاصلي")
 message.channel.send("!MK |")
 message.channel.send(":arrow_down:شعار الكلان بلعبة")
-message.channel.send("ℳӃ͡♛")
-});
+message.channel.send("ℳӃ͡♛");
+
 client.on("ready", function() {
 	console.log("ready");
 	

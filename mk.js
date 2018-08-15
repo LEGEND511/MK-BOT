@@ -70,7 +70,7 @@ if (message.content === prefix + 'help') {
    }
 });
 const developers = ["331975722283302912"]
-const adminprefix = "=";
+const adminprefix = "!";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -935,7 +935,7 @@ client.on("ready", function() {
 	console.log("ready");
 	
 	client.user.setStatus("dnd");
-	client.user.setGame("MK_FOR_EVER");
+	client.user.setGame("LND_FOR_EVER");
 });
 
 client.login(process.env.BOT_TOKEN);

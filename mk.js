@@ -278,7 +278,7 @@ client.on('guildMemberAdd', member => {
                      
                                      .addField(' الـسيرفر', `${member.guild.name}`,true)
                                        
-     .setFooter("MK-SYSTEM")
+     .setFooter("SYSTEM")
         .setTimestamp()
    
       channel.sendEmbed(embed);

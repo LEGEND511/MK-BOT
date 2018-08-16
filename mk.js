@@ -926,16 +926,14 @@ message.channel.send({embed});
 client.on('message', message => {
 if(message.content.startsWith('الشعار')) {
 message.channel.send(":arrow_down:شعار دسكورد جنب اسمك الاصلي")
-message.channel.send("! MK | ")
-message.channel.send(":arrow_down:شعار الكلان بلعبة")
-message.channel.send("ℳӃ͡♛")
+message.channel.send("! DMG 🍀| ")
     }
 });
 client.on("ready", function() {
 	console.log("ready");
 	
 	client.user.setStatus("dnd");
-	client.user.setGame("LND_FOR_EVER");
+	client.user.setGame("DMG_FOR_EVER");
 });
 
 client.login(process.env.BOT_TOKEN);

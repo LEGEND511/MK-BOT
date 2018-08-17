@@ -930,7 +930,7 @@ message.channel.send("! DMG 🍀| ")
     }
 });
 client.on("message", (message) => {
-if (message.content === (prefix + "Ch")) {
+if (message.content === (prefix + "ch")) {
 if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send("**أنت ليس لديك برمشن** `ADMINISTRATOR`" );
 	      if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_CHANNELS ` **").then(msg => msg.delete(6000))
 
@@ -940,7 +940,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.sen
 message.channel.sendMessage('**تم إنشاء روم ساعة :small_orange_diamond:**');
 message.channel.sendMessage('**تم إنشاء روم تاريخ :small_orange_diamond:**');
 message.channel.sendMessage('**تم إنشاء روم عداد الأعضآء :small_orange_diamond:**');
-message.reply ("لتفعيل الرومات اكتب `!Ch ac`");  
+message.reply ("لتفعيل الرومات اكتب `!ch ac`");  
 }
 });
 
@@ -950,7 +950,7 @@ message.reply ("لتفعيل الرومات اكتب `!Ch ac`");
 		
 
 client.on("message", message => {
-if (message.content === (prefi + "Ch ac1")) {
+if (message.content === (prefix + "ch ac1")) {
 let channel = message.client.channels.find('name', "member");
 let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'member');
 if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
@@ -968,7 +968,7 @@ message.channel.sendMessage("تم تفعيل الروم بنجاح")
 
 
 client.on("message", message => {
-  if (message.content === (prefix + "Ch ac2")) {
+  if (message.content === (prefix + "ch ac2")) {
           let channel = message.client.channels.find('name', "hour");
            let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'hour');
   if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
@@ -1000,7 +1000,7 @@ client.on("message", message => {
   }
 });
 client.on("message", message => {
-    if (message.content === (prefix + "Ch ac3")) {
+    if (message.content === (prefix + "ch ac3")) {
           let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'date');
   if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
            

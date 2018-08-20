@@ -873,6 +873,15 @@ client.on('message', message => {
     });
 });
 client.on('message', message => {
+    var args = message.content.split(/[ ]+/)
+    if(message.content.includes('https://')){
+      if(!message.member.hasPermission('ADMINISTRATOR'))
+        message.delete()
+    return message.reply(`** يمنع نشر الروابط بهذا السيرفر  :angry: ! **`)
+        console.log('[مانع نشر الروابط] Send By: ' + message.author.username)
+    }
+});
+client.on('message', message => {
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()

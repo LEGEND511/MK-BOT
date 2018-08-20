@@ -23,6 +23,16 @@ client.on('ready', () => {
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('----------------------------------------------')
 });
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "♘『 M E M B E R 』");
+   member.addRole (role);
+  
+})
+
+client.on ("guildMemberRemove", member => {
+   
+})
 client.on('message', message => {
 if (message.content === prefix + 'admin') {
 if (!message.member.hasPermission("ADMINISTRATOR")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");

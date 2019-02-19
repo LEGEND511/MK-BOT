@@ -7,7 +7,7 @@ const Canvas = require('canvas');
 const jimp = require("jimp");
 ///////////////////////////////////////////////
 const prefix = "!";
-///////////////////////////////////////////////
+///////////////////////////////////////////////0909
 const moment = require('moment');
 const Discord = require("discord.js");
 const client = new Discord.Client();

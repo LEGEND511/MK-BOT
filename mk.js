@@ -935,7 +935,7 @@ let embed = new Discord.RichEmbed()
 
 .setThumbnail(`${z.avatarURL}`)
 .setFooter(message.author.username, message.author.avatarURL)
-
+.setMaxListeners()
 message.channel.send({embed});
   console.log('[id] Send By: ' + message.author.username)
     if (!message) return message.reply('**ضع المينشان بشكل صحيح  ❌ **').catch(console.error);
